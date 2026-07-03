@@ -1,4 +1,6 @@
-/* إعدادات وتخصيصات الألوان الرئيسية للنظام الداكن الحديث */
+/* ==========================================================================
+   1. إعدادات وتخصيصات الألوان الرئيسية للنظام الداكن الحديث
+   ========================================================================== */
 :root {
     --bg-main: #0b0f19;
     --bg-accent: #111827;
@@ -14,7 +16,9 @@
     --mgmt-color: #c084fc;
 }
 
-/* التصفير والتأسيس العام */
+/* ==========================================================================
+   2. التصفير والتأسيس العام
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +48,9 @@ body {
     background-color: var(--bg-accent);
 }
 
-/* تنسيق الهيدر */
+/* ==========================================================================
+   3. تنسيق الهيدر (شريط التنقل العلوي)
+   ========================================================================== */
 header {
     background-color: rgba(11, 15, 25, 0.85);
     backdrop-filter: blur(12px);
@@ -110,7 +116,9 @@ nav ul li a:hover {
     color: var(--bg-main) !important;
 }
 
-/* قسم الـ Hero الاحترافي */
+/* ==========================================================================
+   4. قسم الـ Hero الاحترافي
+   ========================================================================== */
 #hero {
     height: 90vh;
     display: flex;
@@ -148,7 +156,7 @@ nav ul li a:hover {
 .gradient-text {
     background: linear-gradient(90deg, #38bdf8, #818cf8);
     -webkit-background-clip: text;
-    background-clip: text; /* السطر القياسي لحل التحذير */
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -197,7 +205,9 @@ nav ul li a:hover {
     border-color: var(--text-muted);
 }
 
-/* ترويسة الأقسام المشتركة */
+/* ==========================================================================
+   5. ترويسة الأقسام المشتركة والملف المهني
+   ========================================================================== */
 .section-header {
     text-align: center;
     margin-bottom: 60px;
@@ -217,7 +227,6 @@ nav ul li a:hover {
     letter-spacing: 0.5px;
 }
 
-/* الملف المهني */
 .about-content {
     max-width: 800px;
     margin: auto;
@@ -230,7 +239,9 @@ nav ul li a:hover {
     border: 1px solid var(--border-color);
 }
 
-/* شبكة كروت المهارات */
+/* ==========================================================================
+   6. شبكة كروت المهارات
+   ========================================================================== */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -266,7 +277,9 @@ nav ul li a:hover {
     font-size: 14.5px;
 }
 
-/* تصميم جدول الشهادات الاحترافي */
+/* ==========================================================================
+   7. تصميم جدول الشهادات الاحترافي
+   ========================================================================== */
 .table-responsive {
     overflow-x: auto;
     background-color: var(--bg-accent);
@@ -318,7 +331,9 @@ nav ul li a:hover {
     font-size: 14px;
 }
 
-/* تايملاين المشاريع والخبرات */
+/* ==========================================================================
+   8. تايملاين المشاريع والخبرات
+   ========================================================================== */
 .experience-timeline {
     max-width: 800px;
     margin: auto;
@@ -364,7 +379,9 @@ nav ul li a:hover {
     font-size: 15px;
 }
 
-/* فورم الاتصال الفاخر */
+/* ==========================================================================
+   9. فورم الاتصال الفاخر
+   ========================================================================== */
 .contact-wrapper {
     max-width: 800px;
     margin: auto;
@@ -433,7 +450,9 @@ nav ul li a:hover {
     background-color: var(--primary-hover);
 }
 
-/* الفوتر */
+/* ==========================================================================
+   10. الفوتر
+   ========================================================================== */
 footer {
     border-top: 1px solid var(--border-color);
     padding: 30px;
@@ -446,29 +465,109 @@ footer p {
     font-size: 14px;
 }
 
-/* شاشات الجوال ووسائل التجاوب */
+/* ==========================================================================
+   11. شاشات الجوال ووسائل التجاوب الكامل والمطور (Responsive Design)
+   ========================================================================== */
 @media (max-width: 768px) {
+    /* ضبط الحاويات والهوامش العامة */
+    .container {
+        padding: 60px 15px;
+        width: 95%;
+    }
+
+    /* هيدر متجاوب ومريح للعين على الجوال */
     .header-container {
         flex-direction: column;
-        padding: 15px;
+        gap: 12px;
+        padding: 12px 10px;
     }
+
     nav ul {
-        margin-top: 15px;
+        margin-top: 0;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
+
     nav ul li {
-        margin: 0 10px;
+        margin: 0 !important;
     }
+
+    nav ul li a {
+        font-size: 13px;
+        padding: 6px 10px;
+        display: inline-block;
+    }
+
+    /* تحويل زر تواصل معي إلى نمط متناسق داخل القائمة */
+    .nav-btn {
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+
+    /* تنسيق قسم الـ Hero وعناوينه */
+    #hero {
+        height: auto;
+        min-height: 85vh;
+        padding-top: 140px;
+        padding-bottom: 40px;
+    }
+
     #hero h1 {
-        font-size: 34px;
+        font-size: 28px;
+        line-height: 1.4;
+        padding: 0 5px;
     }
+
+    #hero p {
+        font-size: 15px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    /* جعل الأزرار بملء العرض ومتراصة عمودياً بالتساوي */
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+
+    /* ضبط فورم الاتصال والمحتوى المهني */
+    .about-content {
+        padding: 25px 15px;
+        font-size: 16px;
+    }
+
     .form-row {
         flex-direction: column;
         gap: 0;
     }
+
     .form-row .form-group-premium {
         margin-bottom: 25px;
     }
+
     .contact-form-premium {
-        padding: 30px 20px;
+        padding: 30px 15px;
+    }
+    
+    /* تحسين مرونة الجداول للشهادات */
+    .table-responsive {
+        margin: 0 -5px;
+    }
+    
+    .cert-table th, .cert-table td {
+        padding: 12px 14px;
+        font-size: 13px;
     }
 }
