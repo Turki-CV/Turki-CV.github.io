@@ -1,322 +1,423 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="الموقع المهني لتركي الحجاجي، محلل بيانات وذكاء أعمال ونظم معلومات." />
+    <meta name="theme-color" content="#07172d" />
+    <title>تركي الحجاجي | Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="top">
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تركي الحجاجي | أخصائي نظم معلومات ومطور حلول</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- خط Cairo المميز للاستخدام الاحترافي -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png">
-</head>
-
-<body>
-
-    <!-- القائمة العلوية التفاعلية -->
-    <header>
-        <div class="header-container">
-            <div class="logo">تركي الحجاجي<span class="dot">.</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#about">البروفايل</a></li>
-                    <li><a href="#skills">المهارات</a></li>
-                    <li><a href="#certificates">الشهادات والاعتمادات</a></li>
-                    <li><a href="#experience">المشاريع والمحطات</a></li>
-                    <li><a href="#contact" class="nav-btn">تواصل معي</a></li>
-                </ul>
-            </nav>
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="التنقل الرئيسي">
+        <a class="brand" href="#top" aria-label="العودة إلى البداية">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>تركي الحجاجي</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="primary-menu">
+          <a href="#about">عنّي</a>
+          <a href="#projects">المشاريع</a>
+          <a href="#skills">المهارات</a>
+          <a href="#certificates">الدورات</a>
+          <a href="#experience">الخبرة</a>
+          <a href="#contact">تواصل</a>
+          <a class="availability nav-cta" href="#contact"><span></span>متاح للفرص</a>
         </div>
+      </nav>
     </header>
 
-    <!-- القسم الرئيسي المطور (Hero Section) -->
-    <section id="hero">
-        <div class="hero-container">
-        <span class="hero-badge">متاح للفرص التقنية وتحليل النظم</span>
-        
-        <h1 class="gradient-text">
-            نبتكر في هندسة البيانات <br>لنصنع نظم معلومات ذكية وتفاعلية.
-        </h1>
-        
-        <p>محلل نظم (Systems Analyst) يمتلك شغفاً برمجياً في بناء قواعد البيانات وتطوير الويب، وكفاءة مشهودة في تحليل العمليات اللوجستية والميدانية الكبرى وإعادة هندستها.</p>
-        
-        <div class="hero-actions">
-            <a href="#skills" class="btn btn-primary">استعراض الكفاءات</a>
-            <a href="#contact" class="btn btn-secondary">مناقشة عمل</a>
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-ambient" aria-hidden="true">
+          <span class="ambient-orb orb-cyan"></span>
+          <span class="ambient-orb orb-violet"></span>
+          <span class="ambient-orb orb-blue"></span>
+          <svg class="signal-network" viewBox="0 0 1600 760" preserveAspectRatio="none">
+            <path class="signal-path path-one" d="M-40 590 C220 480 318 685 540 535 S900 305 1105 420 S1375 635 1640 360" />
+            <path class="signal-path path-two" d="M-20 220 C260 80 450 365 695 235 S1090 92 1260 220 S1470 350 1640 190" />
+            <path class="signal-path path-three" d="M110 750 C290 590 450 680 645 570 S1040 480 1170 610 S1390 760 1570 545" />
+            <g class="signal-nodes"><circle cx="540" cy="535" r="5" /><circle cx="1105" cy="420" r="6" /><circle cx="695" cy="235" r="4" /><circle cx="1260" cy="220" r="5" /><circle cx="645" cy="570" r="4" /></g>
+          </svg>
+          <div class="signal-columns"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         </div>
-    </div>
-    </section>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow hero-animate">محلل بيانات وذكاء أعمال</p>
+            <h1 id="hero-title" class="hero-animate"><span class="title-word">تركي</span> <span class="title-word">الحجاجي</span></h1>
+            <p class="hero-role hero-animate"><span>Data Analyst</span><b></b><span>Business Intelligence</span><b></b><span>Information Systems</span></p>
+            <p class="hero-lede hero-animate">خريج بكالوريوس نظم معلومات من جامعة أم القرى، أركز على تحليل البيانات والتقارير وذكاء الأعمال، مع أساس في تحليل الأنظمة والعمليات وقواعد البيانات.</p>
+            <div class="hero-actions hero-animate">
+              <a class="button button-primary magnetic" href="#projects">مشاهدة المشاريع <span aria-hidden="true">←</span></a>
+              <a class="button button-secondary magnetic" href="https://www.linkedin.com/in/turki-al-hajjaji-748a2a27a/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#contact">تواصل معي <span aria-hidden="true">←</span></a>
+            </div>
+            <ul class="quick-contact hero-animate" aria-label="معلومات التواصل المختصرة">
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10.5c0 5-8 10-8 10s-8-5-8-10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>مكة المكرمة، السعودية</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:turki9544@gmail.com">turki9544@gmail.com</a></li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 16.9v2.6a1.8 1.8 0 0 1-2 1.8 17.8 17.8 0 0 1-7.8-2.8 17.5 17.5 0 0 1-5.4-5.4A17.8 17.8 0 0 1 3 5.2a1.8 1.8 0 0 1 1.8-2H7.4a1.8 1.8 0 0 1 1.8 1.5c.1.9.3 1.7.6 2.5a1.8 1.8 0 0 1-.4 1.9L8.3 10.2a14.4 14.4 0 0 0 5.4 5.4l1.1-1.1a1.8 1.8 0 0 1 1.9-.4c.8.3 1.6.5 2.5.6a1.8 1.8 0 0 1 1.8 2.2Z"/></svg><a dir="ltr" href="tel:+966558759593">+966 55 875 9593</a></li>
+            </ul>
+          </div>
 
-    <!-- قسم نبذة عني المطور (Profile) -->
-    <section id="about" class="container">
-        <div class="section-header">
-            <h2>الملف المهني</h2>
-            <p>الرؤية والتوجه المستقبلي</p>
+          <div class="visual-stage hero-animate">
+          <div class="analytics-visual tilt-card" aria-label="تصوير بصري لتحليل البيانات">
+            <div class="visual-topline"><span>ANALYTICS SNAPSHOT</span><span class="live-dot">CASE STUDY</span></div>
+            <div class="visual-heading"><span>تحليل الأداء</span><strong>Sales &amp; Profitability</strong></div>
+            <div class="visual-kpis">
+              <div><span>إجمالي المبيعات</span><strong>2.55M</strong><small>مؤشر أداء رئيسي</small></div>
+              <div><span>هامش الربح</span><strong>21.60%</strong><small>مؤشر أداء رئيسي</small></div>
+            </div>
+            <div class="chart-card">
+              <div class="chart-title"><span>الاتجاه الشهري</span><small>Sales</small></div>
+              <svg class="line-chart" viewBox="0 0 450 150" preserveAspectRatio="none" role="img" aria-label="رسم اتجاه المبيعات">
+                <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#20b9e8" stop-opacity=".3"/><stop offset="1" stop-color="#20b9e8" stop-opacity="0"/></linearGradient></defs>
+                <path class="chart-grid" d="M0 25H450M0 75H450M0 125H450" />
+                <path class="area" d="M0 125 L0 102 L40 113 L80 89 L120 105 L160 68 L200 79 L240 43 L280 28 L320 66 L360 83 L400 56 L450 35 L450 125 Z" />
+                <path class="chart-line" d="M0 102 L40 113 L80 89 L120 105 L160 68 L200 79 L240 43 L280 28 L320 66 L360 83 L400 56 L450 35" />
+                <circle cx="280" cy="28" r="4" />
+              </svg>
+              <div class="chart-months"><span>Jan</span><span>Apr</span><span>Jul</span><span>Oct</span><span>Dec</span></div>
+            </div>
+            <div class="visual-bottom">
+              <div class="mini-bars"><span>المناطق</span><i style="--w:86%"></i><i style="--w:72%"></i><i style="--w:55%"></i><i style="--w:38%"></i></div>
+              <div class="insight"><span class="insight-icon">✦</span><p><small>مؤشر رئيسي</small><strong>Western أعلى مبيعات</strong></p></div>
+            </div>
+          </div>
+          </div>
         </div>
-        <div class="about-content">
-            <p>بصفتي متخصصاً ومحلل نظم (Systems Analyst)، انطلقت مسيرتي من قيادة وتمكين الأجيال في قطاع التعليم الرقمي
-                كمحطة نجاح سابقة، ليتجه طموحي المهني اليوم بالكامل نحو نمذجة وتحليل الأنظمة والبرمجيات على نطاق أوسع.
-                أجمع بين أساس تقني صلب في هندسة الويب وإدارة قواعد البيانات (SQL)، ورؤية تحليلية مدعومة بخبرة ميدانية في
-                إدارة لوجستيات العمليات الكبرى وحل مشكلات السعة وتوثيقها. أتطلع اليوم لتسخير هذه المهارات التراكمية في
-                تحليل المتطلبات، وتصميم دورة حياة الأنظمة (SDLC)، والمساهمة بفعالية في قيادة مشاريع التحول الرقمي
-                الذكية.</p>
-        </div>
-    </section>
+      </section>
 
-    <!-- قسم المهارات المطور -->
-    <section id="skills" class="bg-dark-alt">
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid reveal">
+          <div class="section-intro">
+            <p class="eyebrow">نبذة مختصرة</p>
+            <h2 id="about-title">عنّي</h2>
+          </div>
+          <div class="about-content">
+            <p>تركي الحجاجي، خريج بكالوريوس نظم معلومات من جامعة أم القرى. أركز مهنيًا على تحليل البيانات وذكاء الأعمال والتقارير، وأعمل على تطوير الجانب التطبيقي من مهاراتي من خلال مشاريع في Python وPandas وPower BI وSQL وExcel.</p>
+            <div class="facts">
+              <div><span class="fact-icon">01</span><p><small>التعليم</small><strong dir="ltr">B.Sc. Information Systems</strong><em dir="ltr">Umm Al-Qura University · 2023</em></p></div>
+              <div><span class="fact-icon">02</span><p><small>الموقع</small><strong>مكة المكرمة، السعودية</strong><em>متاح للفرص المهنية</em></p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
         <div class="container">
-            <div class="section-header">
-                <h2>المصفوفة المهارية</h2>
-                <p>القدرات التقنية والتشغيلية المحورية</p>
+          <div class="section-heading reveal">
+            <div><p class="eyebrow">أعمال مختارة</p><h2 id="projects-title">المشاريع</h2></div>
+            <p>مشاريع تطبيقية تجمع بين التحليل، العرض التنفيذي، وتحسين فهم العمليات.</p>
+          </div>
+          <article class="featured-project reveal tilt-card">
+            <div class="project-media">
+              <div class="project-image-frame"><img src="assets/sales-dashboard.png" alt="لوحة Power BI لتحليل أداء المبيعات والربحية" loading="lazy" /></div>
+              <span class="image-caption">Power BI Dashboard · 1,500 Orders</span>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">🖥️</div>
-                    <h3>التعليم الرقمي المعاصر</h3>
-                    <p>تصميم الاستراتيجيات والخرائط التعليمية الرقمية المبتكرة للمراحل الابتدائية وصناعة المحتوى
-                        التفاعلي.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>تطوير الويب وقواعد البيانات</h3>
-                    <p>برمجة الواجهات الخلفية والأنظمة التفاعلية بواسطة PHP مع تصميم وإدارة قواعد البيانات المعقدة
-                        باستخدام SQL.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🛡️</div>
-                    <h3>الأمن السيبراني والأنظمة</h3>
-                    <p>إدارة النظم والبيئات الافتراضية (Ubuntu/Linux via VirtualBox) وتطبيق ممارسات اختبار الاختراق
-                        والأمن السيبراني.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">📊</div>
-                    <h3>القيادة والتدريب الرقمي</h3>
-                    <p>تنظيم وإلقاء الورش التدريبية والمبادرات النوعية للمعلمين لتعظيم الاستفادة من أدوات الذكاء
-                        الاصطناعي.</p>
-                </div>
+            <div class="project-details">
+              <div class="project-label"><span>01 / دراسة حالة</span><span>2023</span></div>
+              <h3 dir="ltr">Sales Performance &amp; Profitability Analysis</h3>
+              <p>تحليل 1,500 معاملة مبيعات باستخدام Python وPandas لفهم المبيعات والربحية وأداء المناطق والمنتجات، ثم بناء Dashboard تفاعلي في Power BI لعرض النتائج في صورة تنفيذية واضحة.</p>
+              <div class="tool-tags" aria-label="أدوات المشروع"><span>Python</span><span>Pandas</span><span>Power BI</span><span>Excel</span></div>
+              <div class="project-kpis" aria-label="مؤشرات الأداء الرئيسية">
+                <div><small>Total Sales</small><strong>2.55M</strong></div><div><small>Total Profit</small><strong>551.22K</strong></div><div><small>Orders</small><strong>1,500</strong></div><div><small>Profit Margin</small><strong>21.60%</strong></div>
+              </div>
+              <div class="findings"><span>نتائج رئيسية</span><ul><li>أعلى ربح إجمالي: Laptop</li><li>أعلى هامش ربح: Mouse</li><li>أعلى مبيعات إقليمية: Western</li><li>طلبات خاسرة: 7</li></ul></div>
             </div>
+          </article>
+          <div class="secondary-projects">
+            <article class="secondary-project reveal tilt-card"><div class="project-number">02</div><p class="eyebrow">تحليل عمليات</p><h3 dir="ltr">Student Admission Acceleration</h3><p>تحليل عملية القبول وتوثيقها باستخدام BPMN وتحديد نقاط الاختناق والمتطلبات التي يمكن تحسينها.</p><div class="tool-tags"><span>BPMN</span><span>Requirements Analysis</span><span>Process Analysis</span></div></article>
+            <article class="secondary-project reveal tilt-card"><div class="project-number">03</div><p class="eyebrow">نظام معلومات</p><h3 dir="ltr">Handy Tutoring Tool</h3><p>نظام للتواصل والمواعيد بين الطلاب وأعضاء هيئة التدريس باستخدام MySQL وLaravel 8 وFlutter/Dart.</p><div class="tool-tags"><span>MySQL</span><span>Laravel</span><span>Flutter</span></div></article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- قسم الشهادات الاحترافي المحدث والمحمي من التداخل -->
-    <section class="final-cert-section"
-        style="width: 100%; max-width: 1200px; margin: 40px auto; padding: 20px; box-sizing: border-box; clear: both; direction: rtl;">
-
-        <div style="text-align: center; margin-bottom: 30px;">
-            <h2 style="font-size: 2rem; color: #ffffff; margin: 0 0 10px 0;">الشهادات المهنية والاعتمادات</h2>
-            <p style="color: #00a8ff; margin: 0; font-size: 1rem;">سجل حافل بالتعلم والتطوير المستمر</p>
-        </div>
-
-        <div
-            style="width: 100%; overflow-x: auto; background-color: #0f172a !important; border: 1px solid #1e293b !important; border-radius: 12px; padding: 15px; box-sizing: border-box;">
-            <table
-                style="width: 100%; border-collapse: collapse !important; text-align: right; color: #f8fafc !important; min-width: 750px;">
-                <thead>
-                    <tr style="border-bottom: 2px solid #1e293b !important; background-color: #1e293b !important;">
-                        <th style="padding: 16px 12px; font-weight: 600; color: #ffffff !important;">اسم الشهادة /
-                            الدورة المهنية</th>
-                        <th style="padding: 16px 12px; font-weight: 600; color: #ffffff !important;">الجهة المانحة /
-                            الاعتماد</th>
-                        <th style="padding: 16px 12px; font-weight: 600; color: #ffffff !important;">التاريخ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- أولاً: أنظمة وبرمجة -->
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong>Java Programming (1, 2, 3)</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">منصة إدراك (Edraak) / الجامعة العربية
-                            المفتوحة</td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يونيو 2023</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong style="white-space: nowrap;">iPhone Application Programming (Swift
-                                5)</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">منصة إدراك (Edraak)</td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يونيو 2023</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong>Android Development</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Tera Courses <code
-                                style="background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #38bdf8; font-size: 0.8rem; margin-right: 8px;">C-648446</code>
-                        </td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يوليو 2022</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong>Data Science & Machine Learning</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">منصة إدراك (Edraak)</td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يونيو 2023</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong>C++ Course with OOP</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Tera Courses <code
-                                style="background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #38bdf8; font-size: 0.8rem; margin-right: 8px;">C-646523</code>
-                        </td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يوليو 2022</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong>Database SQL</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Tera Courses <code
-                                style="background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #38bdf8; font-size: 0.8rem; margin-right: 8px;">C-652458</code>
-                        </td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يوليو 2022</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong>JavaScript ES6</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Tera Courses <code
-                                style="background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #38bdf8; font-size: 0.8rem; margin-right: 8px;">C-649389</code>
-                        </td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">أغسطس 2022</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أنظمة
-                                وبرمجة</span> <strong>CompTIA Linux+</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Tera Courses <code
-                                style="background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #38bdf8; font-size: 0.8rem; margin-right: 8px;">C-639980</code>
-                        </td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">أغسطس 2022</td>
-                    </tr>
-
-                    <!-- ثانياً: أمن سيبراني -->
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(239, 68, 68, 0.15); color: #ef4444; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أمن
-                                سيبراني</span> <strong>Certified Ethical Hacker (CEH)</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Tera Courses <code
-                                style="background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #ef4444; font-size: 0.8rem; margin-right: 8px;">C-651951</code>
-                        </td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">أغسطس 2022</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(239, 68, 68, 0.15); color: #ef4444; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">أمن
-                                سيبراني</span> <strong>مقدمة في الأمن السيبراني</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Cisco Networking Academy</td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يوليو 2022</td>
-                    </tr>
-
-                    <!-- ثالثاً: إدارة وتطوير -->
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(168, 85, 247, 0.15); color: #a855f7; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">إدارة
-                                وتطوير</span> <strong>تخصص مهارات النجاح وتطوير الذات (كامل)</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">منصة إدراك (Edraak)</td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يونيو 2023</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #1e293b !important;">
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(168, 85, 247, 0.15); color: #a855f7; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">إدارة
-                                وتطوير</span> <strong>Project Management (إدارة المشاريع)</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">Tera Courses <code
-                                style="background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #a855f7; font-size: 0.8rem; margin-right: 8px;">C-632836</code>
-                        </td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">يوليو 2022</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 14px 12px;"><span
-                                style="background: rgba(168, 85, 247, 0.15); color: #a855f7; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; display: inline-block;">إدارة
-                                وتطوير</span> <strong>الأساسيات المهنية (Basic Work Skills)</strong></td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">منصة دروب (HADAF)</td>
-                        <td style="padding: 14px 12px; color: #94a3b8 !important;">سبتمبر 2023</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- قسم المشاريع والمحطات العملية -->
-    <section id="experience" class="bg-dark-alt">
+      <section class="section" id="skills" aria-labelledby="skills-title">
         <div class="container">
-            <div class="section-header">
-                <h2>المحطات والخبرات النوعية</h2>
-                <p>أبرز المشاريع والعمليات التشغيلية</p>
+          <div class="section-heading compact reveal"><div><p class="eyebrow">مجالات العمل</p><h2 id="skills-title">المهارات والأدوات</h2></div></div>
+          <div class="skills-grid">
+            <article class="skill-card reveal tilt-card"><span class="skill-index">01</span><h3>تحليل البيانات</h3><p>إعداد البيانات وتحليلها لاستكشاف المؤشرات والنتائج.</p><div class="tool-tags"><span>Python</span><span>Pandas</span><span>Excel</span><span>Data Cleaning</span><span>Exploratory Analysis</span></div></article>
+            <article class="skill-card reveal tilt-card"><span class="skill-index">02</span><h3>ذكاء الأعمال</h3><p>بناء تقارير ولوحات معلومات تساعد على متابعة الأداء.</p><div class="tool-tags"><span>Power BI</span><span>KPIs</span><span>Dashboards</span><span>Reporting</span><span>Data Visualization</span></div></article>
+            <article class="skill-card reveal tilt-card"><span class="skill-index">03</span><h3>قواعد البيانات</h3><p>التعامل مع البيانات المنظمة وفهم العلاقات والنمذجة.</p><div class="tool-tags"><span>SQL</span><span>MySQL</span><span>Relational Databases</span><span>Data Modeling</span></div></article>
+            <article class="skill-card reveal tilt-card"><span class="skill-index">04</span><h3>تحليل الأنظمة</h3><p>تحليل المتطلبات والعمليات لتحسين وضوح الحلول.</p><div class="tool-tags"><span>BPMN</span><span>Requirements Analysis</span><span>Process Analysis</span><span>Systems Analysis</span></div></article>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section certificates-section" id="certificates" aria-labelledby="certificates-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow">التطوير المهني</p><h2 id="certificates-title">الدورات والشهادات</h2></div>
+            <p>مجموعة من الدورات والشهادات التي تدعم الخلفية التقنية والمهنية، مع إبراز ما يرتبط مباشرة بمسار تحليل البيانات وذكاء الأعمال.</p>
+          </div>
+
+          <div class="certificates-featured">
+            
+            <article class="certificate-card reveal tilt-card" data-category="data" data-title="Data Science & Machine Learning" data-provider="Edraak" data-date="24 Jun 2023" data-level="Level completion" data-description="أساسيات علم البيانات والتعلّم الآلي، مع موضوعات في الذكاء الاصطناعي والشبكات العصبية وتطبيقات على مجموعات بيانات." data-image="assets/certificates/data-science-machine-learning.png" data-pdf="assets/certificates/data-science-machine-learning.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Data Science & Machine Learning">
+                <div class="certificate-thumb"><img src="assets/certificates/data-science-machine-learning.png" alt="شهادة Data Science & Machine Learning" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Data & BI</span><span>24 Jun 2023</span></div>
+                  <h3 dir="ltr">Data Science & Machine Learning</h3>
+                  <p>Edraak · 3 hours</p>
+                  <div class="certificate-footer"><span>Level completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="data" data-title="Database SQL" data-provider="Tera Courses" data-date="30 Jul 2022" data-level="Course completion" data-description="دورة في قواعد البيانات وSQL." data-image="assets/certificates/sql-database.png" data-pdf="assets/certificates/sql-database.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Database SQL">
+                <div class="certificate-thumb"><img src="assets/certificates/sql-database.png" alt="شهادة Database SQL" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Data & BI</span><span>30 Jul 2022</span></div>
+                  <h3 dir="ltr">Database SQL</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="security" data-title="Introduction to Cybersecurity" data-provider="Cisco Networking Academy" data-date="18 Jul 2022" data-level="Course completion" data-description="مقدمة في الأمن السيبراني تشمل التهديدات السيبرانية، قابلية الشبكات للهجوم، وتأثير الهجمات ونهج Cisco للكشف والدفاع." data-image="assets/certificates/intro-cybersecurity.png" data-pdf="assets/certificates/intro-cybersecurity.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Introduction to Cybersecurity">
+                <div class="certificate-thumb"><img src="assets/certificates/intro-cybersecurity.png" alt="شهادة Introduction to Cybersecurity" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Cybersecurity & IT</span><span>18 Jul 2022</span></div>
+                  <h3 dir="ltr">Introduction to Cybersecurity</h3>
+                  <p>Cisco Networking Academy</p>
+                  <div class="certificate-footer"><span>Course completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="professional" data-title="Basic Work Skills" data-provider="Doroob" data-date="26 Sep 2023" data-level="Course completion" data-description="الأساسيات المهنية." data-image="assets/certificates/basic-work-skills.png" data-pdf="assets/certificates/basic-work-skills.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Basic Work Skills">
+                <div class="certificate-thumb"><img src="assets/certificates/basic-work-skills.png" alt="شهادة Basic Work Skills" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Professional</span><span>26 Sep 2023</span></div>
+                  <h3 dir="ltr">Basic Work Skills</h3>
+                  <p>Doroob · 2 hours</p>
+                  <div class="certificate-footer"><span>Course completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="professional" data-title="Project Management" data-provider="Tera Courses" data-date="11 Jul 2022" data-level="Course completion" data-description="دورة في أساسيات إدارة المشاريع." data-image="assets/certificates/project-management.png" data-pdf="assets/certificates/project-management.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Project Management">
+                <div class="certificate-thumb"><img src="assets/certificates/project-management.png" alt="شهادة Project Management" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Professional</span><span>11 Jul 2022</span></div>
+                  <h3 dir="ltr">Project Management</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="programming" data-title="Java Programming 1" data-provider="Edraak / Arab Open University" data-date="24 Jun 2023" data-level="Level completion" data-description="أساسيات لغة Java، الصياغة البرمجية، كتابة البرامج، وأنواع البيانات." data-image="assets/certificates/java-programming-1.png" data-pdf="assets/certificates/java-programming-1.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Java Programming 1">
+                <div class="certificate-thumb"><img src="assets/certificates/java-programming-1.png" alt="شهادة Java Programming 1" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Programming</span><span>24 Jun 2023</span></div>
+                  <h3 dir="ltr">Java Programming 1</h3>
+                  <p>Edraak / Arab Open University · 3 hours</p>
+                  <div class="certificate-footer"><span>Level completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+          </div>
+          <div class="certificates-library">
+            
+            <article class="certificate-card reveal tilt-card" data-category="programming" data-title="Java Programming 2" data-provider="Edraak / Arab Open University" data-date="24 Jun 2023" data-level="Level completion" data-description="الحلقات، المصفوفات، النصوص، والدوال وتطبيقاتها." data-image="assets/certificates/java-programming-2.png" data-pdf="assets/certificates/java-programming-2.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Java Programming 2">
+                <div class="certificate-thumb"><img src="assets/certificates/java-programming-2.png" alt="شهادة Java Programming 2" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Programming</span><span>24 Jun 2023</span></div>
+                  <h3 dir="ltr">Java Programming 2</h3>
+                  <p>Edraak / Arab Open University · 3 hours</p>
+                  <div class="certificate-footer"><span>Level completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="programming" data-title="Java Programming 3" data-provider="Edraak / Arab Open University" data-date="24 Jun 2023" data-level="Level completion" data-description="مفاهيم متقدمة في الدوال والبرمجة كائنية التوجه." data-image="assets/certificates/java-programming-3.png" data-pdf="assets/certificates/java-programming-3.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Java Programming 3">
+                <div class="certificate-thumb"><img src="assets/certificates/java-programming-3.png" alt="شهادة Java Programming 3" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Programming</span><span>24 Jun 2023</span></div>
+                  <h3 dir="ltr">Java Programming 3</h3>
+                  <p>Edraak / Arab Open University · 3 hours</p>
+                  <div class="certificate-footer"><span>Level completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="programming" data-title="C++ Programming with OOP" data-provider="Tera Courses" data-date="22 Jul 2022" data-level="Course completion" data-description="دورة C++ مع مفاهيم البرمجة كائنية التوجه." data-image="assets/certificates/cpp-oop.png" data-pdf="assets/certificates/cpp-oop.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة C++ Programming with OOP">
+                <div class="certificate-thumb"><img src="assets/certificates/cpp-oop.png" alt="شهادة C++ Programming with OOP" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Programming</span><span>22 Jul 2022</span></div>
+                  <h3 dir="ltr">C++ Programming with OOP</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><small class="cert-id">C-646523</small><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="programming" data-title="JavaScript ES6" data-provider="Tera Courses" data-date="01 Aug 2022" data-level="Course completion" data-description="أساسيات JavaScript ES6." data-image="assets/certificates/javascript-es6.png" data-pdf="assets/certificates/javascript-es6.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة JavaScript ES6">
+                <div class="certificate-thumb"><img src="assets/certificates/javascript-es6.png" alt="شهادة JavaScript ES6" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Programming</span><span>01 Aug 2022</span></div>
+                  <h3 dir="ltr">JavaScript ES6</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><small class="cert-id">C-649389</small><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="programming" data-title="iPhone Application Programming" data-provider="Edraak / Arab Open University" data-date="24 Jun 2023" data-level="Level completion" data-description="مبادئ تطوير تطبيقات iOS باستخدام Swift 5، واجهات المستخدم، قواعد البيانات والنشر." data-image="assets/certificates/iphone-programming.png" data-pdf="assets/certificates/iphone-programming.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة iPhone Application Programming">
+                <div class="certificate-thumb"><img src="assets/certificates/iphone-programming.png" alt="شهادة iPhone Application Programming" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Programming</span><span>24 Jun 2023</span></div>
+                  <h3 dir="ltr">iPhone Application Programming</h3>
+                  <p>Edraak / Arab Open University · 6 hours</p>
+                  <div class="certificate-footer"><span>Level completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="programming" data-title="Android" data-provider="Tera Courses" data-date="25 Jul 2022" data-level="Course completion" data-description="دورة في تطوير تطبيقات Android." data-image="assets/certificates/android.png" data-pdf="assets/certificates/android.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Android">
+                <div class="certificate-thumb"><img src="assets/certificates/android.png" alt="شهادة Android" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Programming</span><span>25 Jul 2022</span></div>
+                  <h3 dir="ltr">Android</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><small class="cert-id">C-648446</small><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="security" data-title="CompTIA Linux+ — Course" data-provider="Tera Courses" data-date="05 Aug 2022" data-level="Course completion" data-description="دورة في Linux؛ المستند المرفق يثبت إتمام دورة، وليس اعتماد CompTIA الرسمي." data-image="assets/certificates/linux-plus-course.png" data-pdf="assets/certificates/linux-plus-course.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة CompTIA Linux+ — Course">
+                <div class="certificate-thumb"><img src="assets/certificates/linux-plus-course.png" alt="شهادة CompTIA Linux+ — Course" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Cybersecurity & IT</span><span>05 Aug 2022</span></div>
+                  <h3 dir="ltr">CompTIA Linux+ — Course</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><small class="cert-id">C-639980</small><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="security" data-title="Certified Ethical Hacker — Course" data-provider="Tera Courses" data-date="20 Jul 2022" data-level="Course completion" data-description="إتمام دورة إلكترونية بعنوان Certified Ethical Hacker." data-image="assets/certificates/ceh-course-1.png" data-pdf="assets/certificates/ceh-course-1.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Certified Ethical Hacker — Course">
+                <div class="certificate-thumb"><img src="assets/certificates/ceh-course-1.png" alt="شهادة Certified Ethical Hacker — Course" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Cybersecurity & IT</span><span>20 Jul 2022</span></div>
+                  <h3 dir="ltr">Certified Ethical Hacker — Course</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><small class="cert-id">C-639977</small><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="security" data-title="Certified Ethical Hacker — Course" data-provider="Tera Courses" data-date="01 Aug 2022" data-level="Course completion" data-description="إتمام دورة إلكترونية بعنوان Certified Ethical Hacker." data-image="assets/certificates/ceh-course-2.png" data-pdf="assets/certificates/ceh-course-2.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Certified Ethical Hacker — Course">
+                <div class="certificate-thumb"><img src="assets/certificates/ceh-course-2.png" alt="شهادة Certified Ethical Hacker — Course" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Cybersecurity & IT</span><span>01 Aug 2022</span></div>
+                  <h3 dir="ltr">Certified Ethical Hacker — Course</h3>
+                  <p>Tera Courses</p>
+                  <div class="certificate-footer"><span>Course completion</span><small class="cert-id">C-651951</small><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="professional" data-title="Goal Setting & Self-Management Skills" data-provider="Edraak / Arab Open University" data-date="24 Jun 2023" data-level="Level completion" data-description="تحديد الأهداف وفق SMART، ترتيب الأولويات، التواصل وتحليل المشكلات." data-image="assets/certificates/goal-setting.png" data-pdf="assets/certificates/goal-setting.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Goal Setting & Self-Management Skills">
+                <div class="certificate-thumb"><img src="assets/certificates/goal-setting.png" alt="شهادة Goal Setting & Self-Management Skills" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Professional</span><span>24 Jun 2023</span></div>
+                  <h3 dir="ltr">Goal Setting & Self-Management Skills</h3>
+                  <p>Edraak / Arab Open University · 2 hours</p>
+                  <div class="certificate-footer"><span>Level completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+
+            <article class="certificate-card reveal tilt-card" data-category="professional" data-title="Success Skills & Self-improvement" data-provider="Edraak" data-date="24 Jun 2023" data-level="Level completion" data-description="برنامج يشمل النجاح، تحديد الأهداف، إدارة الوقت والضغط، ومهارات التواصل." data-image="assets/certificates/success-skills.png" data-pdf="assets/certificates/success-skills.pdf">
+              <button class="certificate-button" type="button" aria-label="عرض شهادة Success Skills & Self-improvement">
+                <div class="certificate-thumb"><img src="assets/certificates/success-skills.png" alt="شهادة Success Skills & Self-improvement" loading="lazy" /></div>
+                <div class="certificate-body">
+                  <div class="certificate-meta"><span>Professional</span><span>24 Jun 2023</span></div>
+                  <h3 dir="ltr">Success Skills & Self-improvement</h3>
+                  <p>Edraak</p>
+                  <div class="certificate-footer"><span>Level completion</span><b>↗</b></div>
+                </div>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="certificate-modal" id="certificate-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certificate-modal-title">
+        <div class="certificate-modal-backdrop" data-close-certificate></div>
+        <div class="certificate-modal-panel">
+          <button class="certificate-modal-close" type="button" aria-label="إغلاق" data-close-certificate>×</button>
+          <div class="certificate-modal-image"><img id="certificate-modal-image" src="" alt="" /></div>
+          <div class="certificate-modal-content">
+            <p class="eyebrow" id="certificate-modal-provider"></p>
+            <h3 id="certificate-modal-title"></h3>
+            <p id="certificate-modal-description"></p>
+            <div class="certificate-modal-meta">
+              <span id="certificate-modal-date"></span>
+              <span id="certificate-modal-level"></span>
             </div>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="time-dot"></div>
-                    <h3>مبادرة "ساعة الذكاء الاصطناعي"</h3>
-                    <p class="time-meta">قيادة وتدريب عن بعد</p>
-                    <p>تخطيط وتقديم جلسة تدريبية تقنية تفاعلية متكاملة استهدفت الكوادر التعليمية عبر الفضاء الرقمي، بهدف
-                        تمكين المعلمين من توظيف تقنيات الذكاء الاصطناعي في إعداد الحصص المدرسية وتطوير المخرجات
-                        الدراسية.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="time-dot"></div>
-                    <h3>إدارة العمليات اللوجستية والتشغيلية</h3>
-                    <p class="time-meta">خبرة ميدانية وإدارة السعة</p>
-                    <p>العمل على إدارة وتنسيق حركة التدفقات البشرية واللوجستية في بيئات عالية الضغط وضمن مشاريع وطنية
-                        كبرى، مع التميز في جرد وتوثيق البيانات وحل مشكلات السعة والربط الميداني بكفاءة لضمان انسيابية
-                        التشغيل الميداني.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="time-dot"></div>
-                    <h3>هندسة التطبيقات وقواعد البيانات</h3>
-                    <p class="time-meta">مشاريع نظم معلومات مستقلة</p>
-                    <p>بناء وهيكلة قواعد بيانات علائقية قوية باستخدام محرك SQL وربطها مع تطبيقات الويب المبنية بلغة PHP
-                        لتقديم حلول تقنية برمجية مخصصة وعملية لإدارة البيانات وفحص سلامتها.</p>
-                </div>
-            </div>
+            <a class="button button-primary" id="certificate-modal-pdf" href="" target="_blank" rel="noopener">فتح الشهادة الأصلية ↗</a>
+          </div>
         </div>
-    </section>
-
-    <!-- قسم تواصل معي الاحترافي -->
-    <section id="contact" class="container">
-        <div class="section-header">
-            <h2>بناء قنوات الاتصال</h2>
-            <p>يسعدني تواصلك لمناقشة فرص العمل أو التعاون المشترك</p>
+      </div>
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="container experience-grid">
+          <div class="section-intro reveal"><p class="eyebrow">المسار المهني</p><h2 id="experience-title">الخبرة والمسار</h2><p class="intro-note">خبرات عملية وأكاديمية أسهمت في بناء أساس منظم للعمل والتواصل والتحليل.</p></div>
+          <ol class="timeline">
+            <li class="reveal"><span class="timeline-dot"></span><div class="timeline-meta"><strong dir="ltr">2 Years</strong><small>السعودية</small></div><div><h3>معلم حاسب آلي</h3><p class="place" dir="ltr">Computer Teacher · Saudi Arabia</p><p>تدريس المهارات الرقمية، إعداد المحتوى والتقييمات، وتنظيم جلسات التدريب ونقل المعرفة التقنية.</p></div></li>
+            <li class="reveal"><span class="timeline-dot"></span><div class="timeline-meta"><strong dir="ltr">2023</strong><small>التعليم</small></div><div><h3 dir="ltr">Bachelor of Information Systems</h3><p class="place" dir="ltr">Umm Al-Qura University · 2023</p><p>أساس أكاديمي في نظم المعلومات وقواعد البيانات وتحليل الأنظمة والعمليات.</p></div></li>
+          </ol>
         </div>
-        <div class="contact-wrapper">
-            <form action="https://formspree.io/f/mpqgkppn" method="POST" class="contact-form-premium">
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+      </section>
 
-                <div class="form-row">
-                    <div class="form-group-premium">
-                        <label>الاسم الكريم</label>
-                        <input type="text" name="name" required placeholder="أدخل اسمك بالكامل">
-                    </div>
-                    <div class="form-group-premium">
-                        <label>البريد الإلكتروني</label>
-                        <input type="email" name="email" required placeholder="name@company.com">
-                    </div>
-                </div>
-                <div class="form-group-premium">
-                    <label>عنوان الرسالة</label>
-                    <input type="text" name="subject" required placeholder="ما هو موضوع النقاش؟">
-                </div>
-                <div class="form-group-premium">
-                    <label>تفاصيل الرسالة</label>
-                    <textarea name="message" rows="5" required
-                        placeholder="اكتب تفاصيل رسالتك أو العرض المهني هنا..."></textarea>
-                </div>
-                <button type="submit" class="btn-submit-premium">إرسال الرسالة الرقمية</button>
-            </form>
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal"><p class="eyebrow">لنبدأ محادثة</p><h2 id="contact-title">التواصل المهني</h2><p>للتواصل بشأن فرص العمل أو التعاون في مجالات تحليل البيانات وذكاء الأعمال ونظم المعلومات والتقارير.</p><div class="contact-details"><a href="mailto:turki9544@gmail.com"><span>البريد الإلكتروني</span><strong>turki9544@gmail.com</strong><i>↗</i></a><a dir="ltr" href="tel:+966558759593"><span>الهاتف</span><strong>+966 55 875 9593</strong><i>↗</i></a><a href="https://www.linkedin.com/in/turki-al-hajjaji-748a2a27a/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong dir="ltr">turki-al-hajjaji</strong><i>↗</i></a></div></div>
+          <form class="contact-form reveal tilt-card" action="https://formspree.io/f/mpqgkppn" method="POST" aria-label="نموذج التواصل">
+            <div class="form-row"><label>الاسم<input type="text" name="name" autocomplete="name" required /></label><label>البريد الإلكتروني<input type="email" name="email" autocomplete="email" required /></label></div>
+            <label>الموضوع<input type="text" name="subject" required /></label>
+            <label>الرسالة<textarea name="message" rows="5" required></textarea></label>
+            <button class="button button-primary submit-button" type="submit"><span class="button-label">إرسال الرسالة</span><span class="button-loader" aria-hidden="true"></span><span aria-hidden="true">←</span></button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- الفوتر -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 تركي الحجاجي. صُمم بحب وشغف تقني متميز.</p>
-        </div>
-    </footer>
-
-</body>
-
+    <footer class="site-footer"><div class="container"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>تركي الحجاجي</span></a><p>Data Analyst · Business Intelligence · Information Systems</p><a class="back-top" href="#top">العودة للأعلى <span>↑</span></a></div>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="العودة إلى أعلى الصفحة">
+    <span>↑</span>
+  </button>
+</footer>
+    <script src="script.js"></script>
+  </body>
 </html>
